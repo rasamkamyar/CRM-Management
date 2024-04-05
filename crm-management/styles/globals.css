@@ -259,7 +259,7 @@ h4 {
 }
 
 h1{
-  color: white;
+  color: red;
 }
 @media (max-width: 600px) {
   .card {
