@@ -1,9 +1,13 @@
-function Form (){
-    return(
-        <h1 style={{color:"red"}}>
-            form page
-        </h1>
-    )
+import FormInput from "../FormInput";
+import ItemList from "../ItemList";
+
+function Form({ form, setForm }) {
+  return (
+    <div>
+      {/* <FormInput />; */}
+      <ItemList form={form} setForm={setForm} />
+    </div>
+  );
 }
 
-export default Form
+export default Form;
