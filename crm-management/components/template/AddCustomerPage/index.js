@@ -6,7 +6,7 @@ function AddCustomerPage() {
   const [form, setForm] = useState({
     name: "",
     lastName: "",
-    emial: "",
+    email: "",
     phone: "",
     address: "",
     postalCode: "",
@@ -20,7 +20,7 @@ function AddCustomerPage() {
     setForm({
       name: "",
       lastName: "",
-      emial: "",
+      email: "",
       phone: "",
       address: "",
       postalCode: "",
@@ -37,7 +37,6 @@ function AddCustomerPage() {
       headers: { "Content-Type": "application/json" },
     });
     const data = res.json();
-    console.log(data);
     if (data.status === "success") router.push("/");
   };
 
