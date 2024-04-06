@@ -36,8 +36,8 @@ function AddCustomerPage() {
       body: JSON.stringify({ data: form }),
       headers: { "Content-Type": "application/json" },
     });
-    const data = res.json();
-    if (data.status === "success") router.push("/");
+    const data = await res.json();
+    if (data.status === "Success") router.push("/");
   };
 
   return (
